@@ -16,7 +16,7 @@ eureka:
 spring:
     datasource:
         driver-class-name: com.mysql.jdbc.Driver
-        password: R00t1234
+        password: root
         platform: mysql
         url: jdbc:mysql://localhost/delivery_order?createDatabaseIfNotExist=true&verifyServerCertificate=false&useSSL=false&requireSSL=false
         username: root
