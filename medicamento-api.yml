@@ -13,13 +13,18 @@ eureka:
   server:
     wait-time-in-ms-when-sync-empty: 3000
 
-spring:
-    datasource:
+datasource:
+        driver-class-name: com.mysql.jdbc.Driver
         password: root
-        url: jdbc:mysql://localhost/medicamentoapi?createDatabaseIfNotExist=true&verifyServerCertificate=false&useSSL=false&requireSSL=false
+        platform: mysql
+        url: jdbc:mysql://localhost/delivery_order?createDatabaseIfNotExist=true&verifyServerCertificate=false&useSSL=false&requireSSL=false
         username: root
     jpa:
-        database: MYSQL
+        database-platform: org.hibernate.dialect.MySQLDialect
+        generate-ddl: false
+        hibernate:
+            ddl-auto: create
+        show-sql: true
 
 spring:
     jackson:
