@@ -26,12 +26,6 @@ datasource:
             ddl-auto: create
         show-sql: true
 
-spring:
-    jackson:
-        deserialization:
-            fail-on-unknown-properties:true
-        date-format:yyyy-MM-dd
-
 authserver:
   hostname: http://localhost:9092
 security:
