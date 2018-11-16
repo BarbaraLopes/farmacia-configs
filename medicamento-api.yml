@@ -24,8 +24,8 @@ spring:
 spring:
     jackson:
         deserialization:
-            fail-on-unknown-properties=true
-        date-format=yyyy-MM-dd
+            fail-on-unknown-properties:true
+        date-format:yyyy-MM-dd
 
 authserver:
   hostname: http://localhost:9092
