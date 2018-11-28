@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  
+eureka:
+  instance:
+    hostname: eureka-service
+    port: 8080
+    
+spring:
+    datasource:
+        url: jdbc:mysql://memories/medicamentoapi?createDatabaseIfNotExist=true&verifyServerCertificate=false&useSSL=false&requireSSL=false
+       
