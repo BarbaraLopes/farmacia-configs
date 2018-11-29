@@ -35,6 +35,7 @@ eureka:
   instance:
     hostname: localhost
     port: 9091
+    preferIpAddress: true
   client:
     registerWithEureka: true
     fetchRegistry: true
